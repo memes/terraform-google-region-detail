@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/memes/terraform-google-region-detail/compare/v1.0.0...v1.0.1) (2023-02-12)
+
+
+### Bug Fixes
+
+* Add Contributor Covenant and badges to README ([1fc87d6](https://github.com/memes/terraform-google-region-detail/commit/1fc87d69aaea6edd03768d468eacb0eaf81ac8f4))
+
 ## 1.0.0 (2023-02-12)
 
 
