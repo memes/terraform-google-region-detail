@@ -1,5 +1,9 @@
 # Google Compute Engine region details module
 
+![GitHub release](https://img.shields.io/github/v/release/memes/terraform-google-region-detail?sort=semver)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+
 This Terraform module takes a list of Google Compute Engine region names, and
 returns a map with each region name as a key to an object:
 
