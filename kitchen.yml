@@ -1,0 +1,70 @@
+#
+---
+driver:
+  name: terraform
+  command_timeout: 600
+  verify_version: true
+
+provisioner:
+  name: terraform
+
+verifier:
+  name: terraform
+  color: true
+  systems:
+    - name: local
+      backend: local
+
+platforms:
+  - name: us-west1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"us-west1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{us-west1={abbreviation=\"us-we1\",display_name=\"The Dalles, Oregon\",latitude=45.609235,longitude=-121.205447}}'
+  - name: us-west1-us-central1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"us-west1\",\"us-central1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{us-west1={abbreviation=\"us-we1\",display_name=\"The Dalles, Oregon\",latitude=45.609235,longitude=-121.205447},us-central1={abbreviation=\"us-ce1\",display_name=\"Council Bluffs, Iowa\",latitude=41.237085,longitude=-96.868656}}'
+  - name: unknown-region
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"foo-bar1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{foo-bar1={abbreviation=\"fo-ba1\",display_name=\"Unknown region\",latitude=39.82835,longitude=-98.5816737}}'
+  - name: northamerica-northeast1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"northamerica-northeast1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{northamerica-northeast1={abbreviation=\"na-ne1\",display_name=\"Montréal, Québec\",latitude=45.5593371,longitude=-73.8522984}}'
+  - name: southamerica-east1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"southamerica-east1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{southamerica-east1={abbreviation=\"sa-ea1\",display_name=\"Osasco, São Paulo\",latitude=-23.5346662,longitude=-46.8196789}}'
+  - name: asia-southeast2
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"asia-southeast2\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{asia-southeast2={abbreviation=\"as-se2\",display_name=\"Jakarta, Indonesia\",latitude=-6.2293277,longitude=106.5427753}}'
+  - name: europe-southwest1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"europe-southwest1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{europe-southwest1={abbreviation=\"eu-sw1\",display_name=\"Madrid, Spain\",latitude=40.4378615,longitude=-3.9662634}}'
+
+suites:
+  - name: regions
