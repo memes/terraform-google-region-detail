@@ -6,6 +6,8 @@ output "results" {
     # contiguous United States marker.
     latitude  = try(local.locations[region].latitude, 39.82835)
     longitude = try(local.locations[region].longitude, -98.5816737)
+    ipv4      = try(local.locations[region].ipv4, [])
+    ipv6      = try(local.locations[region].ipv6, [])
   } }
   description = <<-EOD
     For each supplied region, return an abbreviation for the name in the form

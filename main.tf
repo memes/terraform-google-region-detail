@@ -1,5 +1,21 @@
 terraform {
   required_version = ">= 1.2"
+  required_providers {
+    http = {
+      source  = "hashicorp/http"
+      version = ">= 3.2"
+    }
+  }
+}
+
+data "http" "cloud_json" {
+  url = "https://www.gstatic.com/ipranges/cloud.json"
+  lifecycle {
+    postcondition {
+      condition     = self.status_code == 200
+      error_message = "Failed to retrieve GCP CIDRs."
+    }
+  }
 }
 
 locals {
@@ -8,7 +24,7 @@ locals {
   # (as published at https://www.google.com/about/datacenters/json/locations.json) or
   # the lat/long returned by Google Maps when looking up the city associated
   # with the region.
-  locations = {
+  known_locations = {
     # Changhua County, Taiwan - JSON
     asia-east1 = {
       name      = "Changhua County, Taiwan"
@@ -220,4 +236,9 @@ locals {
       longitude = -115.049574
     }
   }
+  cloud_json = jsondecode(data.http.cloud_json.response_body)
+  locations = { for k, v in local.known_locations : k => merge(v, {
+    ipv4 = compact([for prefix in lookup(local.cloud_json, "prefixes", []) : try(prefix.ipv4Prefix, "") if try(prefix.scope, "") == k])
+    ipv6 = compact([for prefix in lookup(local.cloud_json, "prefixes", []) : try(prefix.ipv6Prefix, "") if try(prefix.scope, "") == k])
+  }) }
 }
