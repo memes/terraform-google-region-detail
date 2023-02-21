@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/memes/terraform-google-region-detail/compare/v1.0.1...v1.1.0) (2023-02-20)
+
+
+### Features
+
+* Add known IPv4 and IPv6 blocks to details ([04d0e82](https://github.com/memes/terraform-google-region-detail/commit/04d0e823cd63c73785ea9819beeec60c1238cbf6)), closes [#5](https://github.com/memes/terraform-google-region-detail/issues/5)
+
 ## [1.0.1](https://github.com/memes/terraform-google-region-detail/compare/v1.0.0...v1.0.1) (2023-02-12)
 
 
