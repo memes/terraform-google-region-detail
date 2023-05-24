@@ -157,6 +157,12 @@ locals {
       latitude  = 45.0702306
       longitude = 7.5876877
     }
+    # Doha, Qatar - estimated
+    me-central1 = {
+      name      = "Doha, Qatar"
+      latitude  = 25.284228
+      longitude = 51.3471815
+    }
     # Tel Aviv, Israel - estimated
     me-west1 = {
       name      = "Tel Aviv, Israel"
