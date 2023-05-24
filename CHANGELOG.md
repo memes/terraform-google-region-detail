@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/memes/terraform-google-region-detail/compare/v1.1.0...v1.1.1) (2023-05-24)
+
+
+### Bug Fixes
+
+* Add region 'europe-west12' (Turin, Italy) ([6c75f7d](https://github.com/memes/terraform-google-region-detail/commit/6c75f7df9f4cbe17ad88100b4ab5ae2581bb3229))
+* Add region me-central1 (Doha, Qatar) ([4d84608](https://github.com/memes/terraform-google-region-detail/commit/4d846084abbbae0de2ac89e33c4cf4eb59e07767))
+* Allow region names that end in two numbers ([a297404](https://github.com/memes/terraform-google-region-detail/commit/a29740496046e55615ece4ad53dcced08194bc19))
+* Verify that all published regions are handled ([267e8e9](https://github.com/memes/terraform-google-region-detail/commit/267e8e9b867c44070874a44a6e19d0e907382da4))
+
 ## [1.1.0](https://github.com/memes/terraform-google-region-detail/compare/v1.0.1...v1.1.0) (2023-02-20)
 
 
