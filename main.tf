@@ -151,6 +151,12 @@ locals {
       latitude  = 48.8588789
       longitude = 2.2036864
     }
+    # Turin, Italy - estimated
+    europe-west12 = {
+      name      = "Turin, Italy"
+      latitude  = 45.0702306
+      longitude = 7.5876877
+    }
     # Tel Aviv, Israel - estimated
     me-west1 = {
       name      = "Tel Aviv, Israel"
