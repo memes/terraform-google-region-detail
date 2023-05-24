@@ -65,6 +65,29 @@ platforms:
         regions: '[\"europe-southwest1\"]'
         # yamllint disable-line rule:line-length
         expected: '{europe-southwest1={abbreviation=\"eu-sw1\",display_name=\"Madrid, Spain\",latitude=40.4378615,longitude=-3.9662634}}'
+<%
+require 'json'
+require 'net/http'
+
+published_regions = JSON.parse(Net::HTTP.get(URI('https://www.gstatic.com/ipranges/cloud.json')), { symbolize_names: true})[:prefixes].collect do |v|
+  v[:scope]
+end.uniq.reject do |v|
+  v == 'global'
+end
+%>
+  - name: published
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[<%= published_regions.map {|region| "\\\"#{region}\\\""}.join(',') %>]'
+        # expected is a required test harness variable, but is not used for the
+        # coverage tests.
+        expected: '{}'
 
 suites:
   - name: regions
+    excludes:
+      - published
+  - name: coverage
+    includes:
+      - published

@@ -1,0 +1,10 @@
+---
+name: coverage
+title: Verifies that there is a valid response for all published Compute regions
+maintainer: Matthew Emes <memes@matthewemes.com>
+license: Apache-2.0
+version: 1.0.0
+inputs:
+  - name: output_results_json
+    type: string
+    required: true
