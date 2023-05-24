@@ -65,6 +65,20 @@ platforms:
         regions: '[\"europe-southwest1\"]'
         # yamllint disable-line rule:line-length
         expected: '{europe-southwest1={abbreviation=\"eu-sw1\",display_name=\"Madrid, Spain\",latitude=40.4378615,longitude=-3.9662634}}'
+  - name: europe-west12
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"europe-west12\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{europe-west12={abbreviation=\"eu-we12\",display_name=\"Turin, Italy\",latitude=45.0702306,longitude=7.5876877}}'
+  - name: me-central1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"me-central1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{me-central1={abbreviation=\"me-ce1\",display_name=\"Doha, Qatar\",latitude=25.284228,longitude = 51.3471815}}'
 <%
 require 'json'
 require 'net/http'
