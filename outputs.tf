@@ -1,6 +1,6 @@
 output "results" {
   value = { for region in toset(local.regions) : region => {
-    abbreviation = join("", regex("^([^-]{2})[^-]*(-)([^1-9]{2})[^1-9]*([1-9]+)$", replace(replace(replace(replace(replace(replace(region, "/^northamerica/", "na"), "/^southamerica/", "sa"), "/southeast/", "se"), "/northeast/", "ne"), "/southwest/", "sw"), "/northwest/", "nw")))
+    abbreviation = join("", regex("^([^-]{2})[^-]*(-)([^1-9]{2})[^1-9]*([1-9][0-9]*)$", replace(replace(replace(replace(replace(replace(region, "/^northamerica/", "na"), "/^southamerica/", "sa"), "/southeast/", "se"), "/northeast/", "ne"), "/southwest/", "sw"), "/northwest/", "nw")))
     display_name = try(local.locations[region].name, "Unknown region")
     # If the region is unknown, default to the geographic center of the
     # contiguous United States marker.
