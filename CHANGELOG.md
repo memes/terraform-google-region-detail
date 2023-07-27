@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/memes/terraform-google-region-detail/compare/v1.1.1...v1.1.2) (2023-07-27)
+
+
+### Bug Fixes
+
+* Resolve regex pattern that fails with '0' ([31f281b](https://github.com/memes/terraform-google-region-detail/commit/31f281b15c32066f715232b7c895bf865b74d827))
+
 ## [1.1.1](https://github.com/memes/terraform-google-region-detail/compare/v1.1.0...v1.1.1) (2023-05-24)
 
 
