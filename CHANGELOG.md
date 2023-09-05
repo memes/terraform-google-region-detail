@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/memes/terraform-google-region-detail/compare/v1.1.2...v1.1.3) (2023-09-05)
+
+
+### Bug Fixes
+
+* Add support for europe-west10 ([50a6d4d](https://github.com/memes/terraform-google-region-detail/commit/50a6d4d475d7322f360b33d13ca89c244e2473fe))
+
 ## [1.1.2](https://github.com/memes/terraform-google-region-detail/compare/v1.1.1...v1.1.2) (2023-07-27)
 
 
