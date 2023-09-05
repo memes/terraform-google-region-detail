@@ -151,6 +151,12 @@ locals {
       latitude  = 48.8588789
       longitude = 2.2036864
     }
+    # Berlin, Germany - estimated
+    europe-west10 = {
+      name      = "Berlin, Germany"
+      latitude  = 52.5068042
+      longitude = 13.0950963
+    }
     # Turin, Italy - estimated
     europe-west12 = {
       name      = "Turin, Italy"

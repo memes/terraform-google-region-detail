@@ -79,6 +79,13 @@ platforms:
         regions: '[\"me-central1\"]'
         # yamllint disable-line rule:line-length
         expected: '{me-central1={abbreviation=\"me-ce1\",display_name=\"Doha, Qatar\",latitude=25.284228,longitude = 51.3471815}}'
+  - name: europe-west10
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"europe-west10\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{europe-west10={abbreviation=\"eu-we10\",display_name=\"Berlin, Germany\",latitude=52.5068042,longitude=13.0950963}}'
 <%
 require 'json'
 require 'net/http'
