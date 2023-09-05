@@ -42,16 +42,16 @@ results = {
     "display_name" = "Council Bluffs, Iowa"
     "latitude" = 41.237085
     "longitude" = -96.868656
-    "ipv4" = []
-    "ipv6" = []
+    "ipv4" = [ list of IPv4 addresses ]
+    "ipv6" = [ list of IPv6 addresses ]
   }
   "us-west1" = {
     "abbreviation" = "us-we1"
     "display_name" = "The Dalles, Oregon"
     "latitude" = 45.609235
     "longitude" = -121.205447
-    "ipv4" = []
-    "ipv6" = []
+    "ipv4" = [ list of IPv4 addresses ]
+    "ipv6" = [ list of IPv6 addresses ]
   }
 }
 ```
