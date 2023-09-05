@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/memes/terraform-google-region-detail/compare/v1.1.3...v1.1.4) (2023-09-05)
+
+
+### Bug Fixes
+
+* Add 'list of IPvX addresses' to README ([597b2a3](https://github.com/memes/terraform-google-region-detail/commit/597b2a3d1fa3d22080194b515bd7db8fbf93221f))
+
 ## [1.1.3](https://github.com/memes/terraform-google-region-detail/compare/v1.1.2...v1.1.3) (2023-09-05)
 
 
