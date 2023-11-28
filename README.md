@@ -28,7 +28,7 @@ to get the region added.
 ```hcl
 module "regions" {
     source  = "memes/region-detail/google"
-    version = "1.1.4"
+    version = "1.1.5"
     regions = ["us-west1", "us-central1"]
 }
 ```
@@ -61,7 +61,7 @@ results = {
 ```hcl
 module "regions" {
     source  = "memes/multi-region-private-network/google//modules/regions"
-    version = "1.1.4"
+    version = "1.1.5"
     regions = ["foo-bar1"]
 }
 ```
