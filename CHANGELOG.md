@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/memes/terraform-google-region-detail/compare/v1.1.4...v1.1.5) (2023-11-28)
+
+
+### Bug Fixes
+
+* Add support for Dammam region (me-central2) ([522f9ae](https://github.com/memes/terraform-google-region-detail/commit/522f9aef192621865cda5813fc35a2107b4ee3b6)), closes [#41](https://github.com/memes/terraform-google-region-detail/issues/41)
+
 ## [1.1.4](https://github.com/memes/terraform-google-region-detail/compare/v1.1.3...v1.1.4) (2023-09-05)
 
 
