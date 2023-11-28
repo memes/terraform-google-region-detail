@@ -169,6 +169,12 @@ locals {
       latitude  = 25.284228
       longitude = 51.3471815
     }
+    # Dammam, Saudi Arabia - estimated
+    me-central2 = {
+      name      = "Dammam, Saudi Arabia"
+      latitude  = 26.3627746
+      longitude = 49.8277302
+    }
     # Tel Aviv, Israel - estimated
     me-west1 = {
       name      = "Tel Aviv, Israel"
