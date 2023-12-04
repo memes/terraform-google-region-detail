@@ -23,7 +23,7 @@ control 'ipv4' do
 
   # NOTE: the published JSON changes frequently, so it is safer to test for the
   # existence of results and that each entry is a valid IPv6 CIDR.
-  results.each do |_, cidrs|
+  results.each_value do |cidrs|
     describe cidrs do
       it { should_not be_nil }
       it { should_not be_empty }
