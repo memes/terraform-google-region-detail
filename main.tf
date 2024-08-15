@@ -25,6 +25,12 @@ locals {
   # the lat/long returned by Google Maps when looking up the city associated
   # with the region.
   known_locations = {
+    # Johannesburg - estimated
+    africa-south1 = {
+      name      = "Johannesburg, South Africa"
+      latitude  = -26.171344
+      longitude = 27.9576233
+    }
     # Changhua County, Taiwan - JSON
     asia-east1 = {
       name      = "Changhua County, Taiwan"

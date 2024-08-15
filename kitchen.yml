@@ -93,6 +93,13 @@ platforms:
         regions: '[\"me-central2\"]'
         # yamllint disable-line rule:line-length
         expected: '{me-central2={abbreviation=\"me-ce2\",display_name=\"Dammam, Saudi Arabia\",latitude=26.3627746,longitude=49.8277302}}'
+  - name: africa-south1
+    driver:
+      root_module_directory: test/fixtures/root
+      variables:
+        regions: '[\"africa-south1\"]'
+        # yamllint disable-line rule:line-length
+        expected: '{africa-south1={abbreviation=\"af-so1\",display_name=\"Johannesburg, South Africa\",latitude=-26.171344,longitude=27.9576233}}'
 <%
 require 'json'
 require 'net/http'
