@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/memes/terraform-google-region-detail/compare/v1.1.5...v1.1.6) (2024-08-15)
+
+
+### Bug Fixes
+
+* Add africa-south1 region ([48ad465](https://github.com/memes/terraform-google-region-detail/commit/48ad465f4aa99c735c7e664fba194660bf31084a)), closes [#40](https://github.com/memes/terraform-google-region-detail/issues/40)
+
 ## [1.1.5](https://github.com/memes/terraform-google-region-detail/compare/v1.1.4...v1.1.5) (2023-11-28)
 
 
