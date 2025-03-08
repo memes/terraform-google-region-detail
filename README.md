@@ -82,7 +82,7 @@ results = {
 ```
 
 <!-- markdownlint-disable MD033 MD034-->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -104,14 +104,14 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_regions"></a> [regions](#input\_regions) | A list of Google Compute region names for which to return details. The module<br>does not validate that any region name is valid, just that it matches a pattern<br>expected of Google Compute region names. | `list(string)` | n/a | yes |
+| <a name="input_regions"></a> [regions](#input\_regions) | A list of Google Compute region names for which to return details. The module<br/>does not validate that any region name is valid, just that it matches a pattern<br/>expected of Google Compute region names. | `list(string)` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_results"></a> [results](#output\_results) | For each supplied region, return an abbreviation for the name in the form<br>`xx-yyN`, a display name that matches the value listed in Google's documentation,<br>and a reasonable latitude and longitude for the region. In the event of a<br>region being unknown to the module, the returned latitude and longitude will<br>be for the historical geographic center of the contiguous 48 United States. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+| <a name="output_results"></a> [results](#output\_results) | For each supplied region, return an abbreviation for the name in the form<br/>`xx-yyN`, a display name that matches the value listed in Google's documentation,<br/>and a reasonable latitude and longitude for the region. In the event of a<br/>region being unknown to the module, the returned latitude and longitude will<br/>be for the historical geographic center of the contiguous 48 United States. |
+<!-- END_TF_DOCS -->
 <!-- markdownlint-enable MD033 MD034 -->
 
 [historical center of the contiguous United States]: https://www.google.com/maps/place/The+Geographic+Center+of+the+United+States/@39.8283459,-98.5816684,17z
