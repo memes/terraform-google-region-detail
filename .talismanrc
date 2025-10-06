@@ -48,3 +48,6 @@ fileignoreconfig:
 - filename: tests/test_root_northamerica-northeast1.py
   checksum: 5dc8ca063a43d76074b41344e854ab4c0cfe0d65eeb08da0bb176e3512ee7e8f
   ignore_detectors: [filecontent]
+- filename: tests/test_root_northamerica-south1.py
+  checksum: f090c774068343186b60807bc21f98869b369fe929b08bd6c90b7eea28813455
+  ignore_detectors: [filecontent]

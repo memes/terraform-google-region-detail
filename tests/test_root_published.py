@@ -12,7 +12,6 @@ from .conftest import run_tofu_in_workspace
 FIXTURE_NAME = "published"
 EXPECTED_UNKNOWN_REGIONS = frozenset(
     {
-        "northamerica-south1",  # TODO(memes): #113
         "asia-southeast3",  # TODO(memes): #112
         "europe-north2",  # TODO(memes): #78
         "us-west8",  # TODO(memes): #60
