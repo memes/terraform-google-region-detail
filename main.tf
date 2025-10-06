@@ -21,7 +21,7 @@ data "http" "cloud_json" {
 locals {
   regions = var.regions == null ? [] : var.regions
   # Note: these values are either the location of a known Google data center
-  # (as published at https://www.google.com/about/datacenters/json/locations.json) or
+  # (was published at https://www.google.com/about/datacenters/json/locations.json) or
   # the lat/long returned by Google Maps when looking up the city associated
   # with the region.
   known_locations = {
@@ -199,6 +199,12 @@ locals {
       latitude  = 43.7184034
       longitude = -79.5184833
     }
+    # Querétaro, Mexico - estimated
+    northamerica-south1 = {
+      name      = "Querétaro, Mexico"
+      latitude  = 20.8412446,
+      longitude = -100.4806393
+    }
     # Osasco, São Paulo - estimated
     southamerica-east1 = {
       name      = "Osasco, São Paulo"
@@ -223,7 +229,7 @@ locals {
       latitude  = 33.194921
       longitude = -80.074502
     }
-    # Ashburn (Loudoun County), Virgnia - JSON
+    # Ashburn (Loudoun County), Virginia - JSON
     us-east4 = {
       name      = "Ashburn, Virginia"
       latitude  = 39.18847
