@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.7](https://github.com/memes/terraform-google-region-detail/compare/v1.1.6...v1.1.7) (2025-10-06)
+
+
+### Bug Fixes
+
+* Add entry for northamerica-south1 (Mexico) ([8ee8e5f](https://github.com/memes/terraform-google-region-detail/commit/8ee8e5f395e08f1739b9db6e2b4cf8c7ad7bea85)), closes [#113](https://github.com/memes/terraform-google-region-detail/issues/113)
+
 ## [1.1.6](https://github.com/memes/terraform-google-region-detail/compare/v1.1.5...v1.1.6) (2024-08-15)
 
 
