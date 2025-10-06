@@ -3,6 +3,7 @@
     "version": "0.2",
     "language": "en",
     "words": [
+        "Dammam",
         "direnv",
         "DOCKERHUB",
         "envrc",
@@ -17,8 +18,15 @@
         "incpatch",
         "ldflags",
         "markdownlint",
+        "Montréal",
+        "northamerica",
         "opencontainers",
+        "Osasco",
         "pastebin",
+        "Québec",
+        "southamerica",
+        "tfvar",
+        "tfvars",
         "thumbsup",
         "trimpath",
         "venv",
@@ -28,5 +36,11 @@
     ],
     "flagWords": [
         "hte"
+    ],
+    "ignorePaths": [
+        ".devcontainer/devcontainer.json",
+        ".gitignore",
+        ".pre-commit-config.yaml",
+        "uv.lock"
     ]
 }

@@ -1,6 +1,7 @@
 # spell-checker: disable
 # yamllint disable rule:line-length
 ---
+version: "1.0"
 fileignoreconfig:
 - filename: .github/workflows/release.yml
   checksum: a975e764f9205155fb006fef6de943574e3d61a314f9215599590a0242ad2efc
@@ -8,3 +9,42 @@ fileignoreconfig:
   checksum: 1a73442a316535a2e8a67a401aef15943f73ab0e405577f6f405e81400a12d57
 - filename: .github/workflows/pre-commit.yml
   checksum: d973823a6d233c44075ad96c2f92e2d2522b3c5767ef6e8376f0731e8a55ab38
+- filename: uv.lock
+  checksum: f2b55e8d5a1e1dc44c9e9e0f08cefb7f087dc3da931039225c1224ebb75c6a15
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_europe-west12.py
+  checksum: 52d3f750561582f2cd1639832286e4c0444874db1a1c7f10b7b4f5ca4b7e333b
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_asia-southeast2.py
+  checksum: 7469c0d7104d8d342f1adaace43b889949e14464d41be08f0c83580b2f977502
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_southamerica-east1.py
+  checksum: 8cd486ac4392e7e6c6dfe510666876ec93d3e5a0ac83a16f9b288dcce99158e1
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_me-central1.py
+  checksum: 1c79c33ee8b75ba8750818e96dfea8bf95ad3df4af10ca403c88cd3c995197af
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_europe-southwest1.py
+  checksum: 7e0bf1564c7bee6d6c67381370da35e5a47a19ec9317f8873bc7ca8858fdf9cd
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_us-west1-us-central1.py
+  checksum: ad8b7a4a5a611e609d51eb1541a4d233169395e9c6aac02f1beeaa2f2f53b162
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_us-west1.py
+  checksum: 255c22928dc0017b58449c04dd72a4441f197aa4bd9aa14002f7ffd33d03e42c
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_africa-south1.py
+  checksum: fc0227cfdff4d862d63ce384971ef7c61cf5b8669b8ad7c2e8f5c196b2a45ad2
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_me-central2.py
+  checksum: 7a6a9e96d48f23e911cc0a962bb086e6b06f00674772f49a2a35386405191b03
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_unknown-region.py
+  checksum: ba8593623b2ff97f8ed4941d9923e8943bf00fda3e9495a40cf723f6e3ea20ca
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_europe-west10.py
+  checksum: 8826f365c2e79f21cb644d7e774459d45c093e81f12c5128aae73139d7c4d5cb
+  ignore_detectors: [filecontent]
+- filename: tests/test_root_northamerica-northeast1.py
+  checksum: 5dc8ca063a43d76074b41344e854ab4c0cfe0d65eeb08da0bb176e3512ee7e8f
+  ignore_detectors: [filecontent]
